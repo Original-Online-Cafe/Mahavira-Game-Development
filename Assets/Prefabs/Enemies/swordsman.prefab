@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4080711779117776445}
   - component: {fileID: 8403911215515599009}
   - component: {fileID: 3522542652703814934}
-  - component: {fileID: 5856628698470007236}
+  - component: {fileID: 4717216778297570494}
   m_Layer: 0
   m_Name: swordsman
   m_TagString: Untagged
@@ -115,7 +115,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5856628698470007236
+--- !u!114 &4717216778297570494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,8 +124,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 6203542971821589704}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e2ff861c5ffc0c46b6507d852bad5e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 5422a42bde08d6948a132d318007cfc1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrol
-  moveSpeed: 1.5
+  m_EditorClassIdentifier: Assembly-CSharp::SwordsmanAI
+  player: {fileID: 0}
+  patrolSpeed: 1.5
+  chaseSpeed: 3
   patrolDistance: 3
+  senseRange: 5
+  giveUpRange: 7
+  combatRange: 1.2
+  maxHeightDifference: 2
+  alertDuration: 0.4
+  attackDuration: 0.7
+  attackCooldown: 0.6
+  alertIcon: {fileID: 0}
+  walkAnimation: Swordsman_Walk
+  attackAnimation: Swordsman_Attack
